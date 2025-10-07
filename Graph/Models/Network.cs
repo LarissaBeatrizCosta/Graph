@@ -38,6 +38,22 @@ namespace Graph.Models
 
         }
 
+        /// Desconecta um nó a outro na rede.
+        /// Valida os números dos nós, verifica se são diferentes e dentro do intervalo permitido.
+        /// Remove a conexão na lista de adjacência.
+        public void Disconnect(int num1, int num2)
+        {
+            ValidateElement(num1);
+            ValidateElement(num2);
+
+            if (num1 == num2)
+                throw new ArgumentException("Números inválidos.");
+
+            adjacencyList[num1].Remove(num2);
+            adjacencyList[num2].Remove(num1);
+
+        }
+
         /// Valida se o número de elementos é maior que zero.
         private static void ValidateNum(int n)
         {
