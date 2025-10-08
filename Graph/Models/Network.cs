@@ -1,7 +1,7 @@
 namespace Graph.Models
 {
     /// Classe responsável por representar uma rede de elementos conectados.
-    /// Permite a criação de conexões entre os elementos e valida os dados
+    /// Permite a criação de conexões, desconexões e consulta de conexões entre os elementos e valida os dados
     public class Network
     {
         /// Número total de elementos na rede.
