@@ -32,3 +32,23 @@ class Program
         Console.WriteLine($"Após desconectar 1 e 2, eles ainda estão conectados? {network.Query(1, 2)}"); // false
     }
 }
+
+
+////Exemplo para validar exceção 
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine("VALIDAÇÕES --------------------\n");
+
+//         var network = new Network(0); 
+//         network.Connect(1, 6); //O número do elemento deve ser maior que zero e menor ou igual ao número total de elementos
+
+//         network.Connect(2, 2); //Os elementos devem ser diferentes
+
+//         network.Connect(1, 2);
+//         network.Connect(1, 2); // A conexão entre os elementos já existe
+
+//         network.Disconnect(1, 3); //A conexão entre os elementos não existe
+//     }
+// }

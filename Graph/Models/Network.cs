@@ -108,7 +108,7 @@ namespace Graph.Models
         private static void ValidateNum(int n)
         {
             if (n <= 0)
-                throw new ArgumentException("O número de elemeentos deve ser maior que zero.");
+                throw new ArgumentException("O número de elementos deve ser maior que zero.");
         }
 
         /// Valida se o número do elemento é maior que zero e menor ou igual ao número total de elementos.
